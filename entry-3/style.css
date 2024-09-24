@@ -1,28 +1,40 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+
+html, body {
+    height: 100%;
     background-color: #ffcccb;
     font-family: Brush Script MT;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
 }
 
+
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+
 .container {
+    width: 100%;
     max-width: 1200px;
     padding: 20px;
+    text-align: center;
 }
 
 h1 {
     font-size: 85px;
     color: #696969;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    padding-top: 20px;
 }
 
 .gallery {
