@@ -1,0 +1,65 @@
+body {
+    background-color: #d3d3d3; 
+    font-family: 'Brush Script MT', cursive; 
+}
+
+h1 {
+    text-align: center;
+    font-size: 150px; 
+  letter-spacing: -17px;
+  margin: 10px;
+}
+
+.yellow {
+    color: #F4BB44; 
+}
+
+.pink {
+    color: #FF69B4; 
+}
+
+.light-green {
+    color: #4CAF50; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px;
+    font-size: 40px;
+  font-family: Bradley Hand;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px; 
+    height: 300px; 
+}
+
+.star {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background-color: #F4BB44;
+}
+
+.circle {
+    clip-path: circle(50%);
+    background-color: #FF69B4;
+}
+
+.diamond {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background-color: #4CAF50;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
