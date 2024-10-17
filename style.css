@@ -1,70 +1,62 @@
+
 body {
-    background-color: #d3d3d3; 
-    font-family: 'Brush Script MT', cursive; 
+    font-family: 'Cutive Mono', monospace;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 h1 {
-    text-align: center;
-    font-size: 150px; 
-  letter-spacing: -17px;
-  margin: 10px;
-}
-
-.yellow {
-    color: #F4BB44; 
-}
-
-.pink {
-    color: #FF69B4; 
-}
-
-.light-green {
-    color: #4CAF50; 
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 100px;
-    font-size: 40px;
-  font-family: Bradley Hand;
-}
-
-li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 250px; 
-    height: 250px; 
-}
-
-.star {
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    background-color: #F4BB44;
-}
-
-.circle {
-    clip-path: circle(50%);
-    background-color: #FF69B4;
-}
-
-.diamond {
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    background-color: #4CAF50;
-}
-
-.triangle {
-    clip-path: polygon(50% 0%, 0% 80%, 100% 80%);
-    background-color: #6CA0DC; /* Blue color */
-}
-
-a {
-    text-decoration: none;
+    font-family: 'Abril Fatface', cursive; 
+    font-size: 70px; 
     color: black;
-    font-weight: bold;
+    margin: 0; 
+}
+
+
+.subheader {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #333;
+  font-family:font-family:'Bebas Neue', sans-serif;
+    font-weight:bold;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.entry {
     text-align: center;
-    width: 100%;
+    transition: transform 0.3s;
+}
+
+.entry img {
+    width: 100%; 
+    height: 150px; 
+    object-fit: cover; 
+    transition: filter 0.3s, transform 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    clip-path: polygon(10% 0%, 100% 10%, 90% 100%, 0% 90%);
+}
+
+.entry:hover img {
+    filter: brightness(0.8); 
+    transform: scale(1.05);
+}
+
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
 }
