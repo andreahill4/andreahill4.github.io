@@ -17,7 +17,24 @@ h1 {
     font-size: 70px;
     margin-bottom: 30px;
     word-wrap: break-word; 
+    color: #000000;
 }
+
+h1 span {
+    color: #000000;
+    transition: color 0.3s ease; 
+}
+
+h1 span:hover {
+    color: #7D9CFF;
+}
+
+h1 span:nth-child(1):hover { color: #FF69B4; }
+h1 span:nth-child(2):hover { color: #FFD93D; }
+h1 span:nth-child(3):hover { color: #FF6B6B; }
+h1 span:nth-child(4):hover { color: #6BCB77; }
+h1 span:nth-child(5):hover { color: #A93FD3; }
+h1 span:nth-child(6):hover { color: #FF9A00; }
 
 h2 {
     font-size: 20px;
@@ -85,33 +102,4 @@ h2:hover {
 
 .image-container:hover .hover-title {
     opacity: 1;
-}
-
-.hover-color {
-    color: #FF69B4; 
-    transition: color 0.3s ease; 
-}
-
-.hover-color:hover {
-    color: #7D9CFF; 
-}
-
-.hover-color:hover:nth-child(2) {
-    color: #FFD93D; 
-}
-
-.hover-color:hover:nth-child(3) {
-    color: #FF6B6B; 
-}
-
-.hover-color:hover:nth-child(4) {
-    color: #6BCB77; 
-}
-
-.hover-color:hover:nth-child(5) {
-    color: #A93FD3; 
-}
-
-.hover-color:hover:nth-child(6) {
-    color: #FF9A00; 
 }
