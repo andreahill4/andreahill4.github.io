@@ -1,0 +1,70 @@
+/* General Styles */
+body {
+    background-color: #0a1931; /* Dark Yankees Blue */
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #162447;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    display: inline-block;
+    position: relative;
+}
+
+/* Creative Hover Effect for Title */
+h1:hover {
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateX(2px) rotate(1deg); }
+    25% { transform: translateX(-2px) rotate(-1deg); }
+    50% { transform: translateX(3px) rotate(2deg); }
+    75% { transform: translateX(-3px) rotate(-2deg); }
+    100% { transform: translateX(2px) rotate(1deg); }
+}
+
+/* Image and Text Styling */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 20px auto;
+    gap: 15px;
+}
+
+.container img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.container img:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+.container p {
+    flex: 1;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Header Hover Effect */
+header:hover {
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.5);
+}
