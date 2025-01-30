@@ -1,0 +1,62 @@
+body {
+    font-family: 'Lora', serif;
+    background-color: #001f3f; /* Navy blue */
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #001a33; /* Slightly darker navy for header */
+}
+
+.entry-header {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+    margin: 0;
+}
+
+.content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-with-image {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.text-with-image.reverse {
+    flex-direction: row-reverse;
+}
+
+.text {
+    flex: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.text p {
+    margin-bottom: 20px;
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 100%;
+    max-width: 450px; /* Slightly smaller images */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
