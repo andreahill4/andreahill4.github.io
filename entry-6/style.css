@@ -1,0 +1,152 @@
+body {
+    background-color: #E3F2FD;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #000000;
+    text-align: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* I LOVE NY Image - FIXED IN UPPER LEFT */
+.nyc-image {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    height: auto;
+    z-index: 1000;
+}
+
+.nyc-image img {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+/* Moving Clouds */
+.clouds {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    z-index: -1;
+}
+
+.cloud-row {
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.cloud-move-left {
+    animation: moveLeft 20s linear infinite;
+}
+
+.cloud-move-right {
+    animation: moveRight 20s linear infinite;
+}
+
+@keyframes moveLeft {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+@keyframes moveRight {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(100%); }
+}
+
+/* Centering Content & Keeping Buildings Low */
+.container {
+    position: relative;
+    max-width: 700px;
+    margin: 120px auto;
+    padding-bottom: 120px;
+}
+
+/* Header */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.letter {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out, color 0.3s ease-in-out;
+}
+
+.letter:active {
+    transform: translateY(-10px);
+    color: #FF4136;
+}
+
+.love {
+    color: red;
+    transition: transform 0.3s ease-in-out;
+}
+
+.love:hover {
+    transform: scale(1.5);
+}
+
+/* Body Hover Effect */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    transition: opacity 0.3s ease-in-out, background 0.3s ease-in-out;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+p:hover {
+    opacity: 0.5;
+    background: rgba(255, 0, 0, 0.1);
+}
+
+/* Cityscape Buildings - FINAL FIX, LOWER PLACEMENT */
+.cityscape {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: fixed;
+    bottom: -20px;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to top, #2c3e50, transparent);
+    padding: 20px;
+}
+
+/* Buildings */
+.building {
+    width: 60px;
+    height: 100px;
+    background-color: #34495e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.tall { height: 130px; }
+.short { height: 80px; }
+
+.windows {
+    width: 15px;
+    height: 15px;
+    background-color: grey;
+    margin: 3px;
+    transition: background 0.3s ease-in-out;
+}
+
+.building:hover .windows {
+    background-color: yellow;
+}
