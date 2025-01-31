@@ -78,3 +78,8 @@ h1 span:nth-child(even) {
 #randomize:hover {
     background-color: #d35400 !important;
 }
+
+/* Force No Source Map Errors */
+html {
+    display: block !important;
+}
