@@ -8,7 +8,6 @@ body {
     position: relative;
 }
 
-/* I LOVE NY Image - Fixed in One Place, Doesn't Move */
 .nyc-image {
     position: absolute;
     top: 80px;
@@ -22,7 +21,6 @@ body {
     display: block;
 }
 
-/* Moving Clouds - STILL THERE, NEVER REMOVED */
 .clouds {
     position: absolute;
     top: 50px;
@@ -55,19 +53,17 @@ body {
     to { transform: translateX(100%); }
 }
 
-/* Moving Header Up */
 .container {
     position: relative;
     max-width: 700px;
-    margin: 100px auto 80px; /* Moved header up */
-    padding-bottom: 100px; /* Less padding so buildings are closer */
+    margin: 100px auto 80px; 
+    padding-bottom: 100px; 
 }
 
-/* Header */
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 50px;
-    margin-bottom: 10px; /* Moved header up */
+    margin-bottom: 10px; 
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -93,11 +89,10 @@ h1 {
     transform: scale(1.5);
 }
 
-/* Body Hover Effect */
 p {
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 15px; /* Reduced spacing to bring buildings closer */
+    margin-bottom: 15px; 
     transition: opacity 0.3s ease-in-out, background 0.3s ease-in-out;
     padding: 10px;
     border-radius: 10px;
@@ -108,27 +103,25 @@ p:hover {
     background: rgba(255, 0, 0, 0.1);
 }
 
-/* Cityscape Buildings - MOVED UP CLOSER TO TEXT BUT STAYING FIXED */
 .cityscape {
     display: flex;
     justify-content: center;
-    align-items: flex-end; /* Makes sure all buildings touch the bottom */
+    align-items: flex-end; 
     gap: 10px;
     width: 100%;
-    height: 180px; /* Increased height to bring them closer */
+    height: 180px; 
     padding: 10px;
-    position: relative; /* KEEPS BUILDINGS AT THE BOTTOM */
-    margin-top: -30px; /* Moves buildings UP closer to text */
+    position: relative; 
+    margin-top: -30px; 
 }
 
-/* Buildings */
 .building {
     width: 60px;
-    height: 120px; /* Slightly taller to get closer */
+    height: 120px; 
     background-color: #34495e;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Makes windows align properly */
+    justify-content: flex-end; 
     align-items: center;
     padding: 10px;
     position: relative;
