@@ -1,20 +1,19 @@
-/* General Styles */
-•⁠  ⁠{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: white !important; /* Force white background */
+    background-color: white;
     color: black;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
 
-/* Header */
 header {
-    background-color: white !important;
+    background-color: white;
     padding: 20px;
 }
 
@@ -27,22 +26,12 @@ h1 {
     position: relative;
 }
 
-/* Header Hover Effect */
+
 h1:hover {
     transform: scale(1.1) rotate(-2deg);
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Alternating Header Colors */
-h1 span:nth-child(odd) {
-    color: #003366 !important; /* Dark Blue */
-}
-
-h1 span:nth-child(even) {
-    color: #d35400 !important; /* Dark Orange */
-}
-
-/* Image and Text Styling */
 .container {
     display: flex;
     align-items: center;
@@ -63,9 +52,8 @@ h1 span:nth-child(even) {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-/* Button */
 #randomize {
-    background-color: #003366 !important;
+    background-color: #003366;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -76,5 +64,5 @@ h1 span:nth-child(even) {
 }
 
 #randomize:hover {
-    background-color: #d35400 !important;
+    background-color: #d35400;
 }
