@@ -20,7 +20,7 @@ header {
 
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.8em;
+    font-size: 3em;
     margin: 0;
     display: inline-block;
     transition: all 0.3s ease-in-out;
@@ -77,9 +77,4 @@ h1 span:nth-child(even) {
 
 #randomize:hover {
     background-color: #d35400 !important;
-}
-
-/* Force No Source Map Errors */
-html {
-    display: block !important;
 }

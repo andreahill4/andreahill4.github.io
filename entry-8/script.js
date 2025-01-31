@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Wrap each letter in a <span> for alternating colors
     const text = title.innerText;
-    title.innerHTML = text.split("").map(letter => ⁠ <span>${letter}</span> ⁠).join("");
+    title.innerHTML = text.split("").map(letter => <span>${letter}</span>).join("");
 
     const letters = title.querySelectorAll("span");
 
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let interval = setInterval(() => {
             let x = (Math.random() - 0.5) * 8; // Random slight movement
             let y = (Math.random() - 0.5) * 8;
-            title.style.transform = ⁠ translate(${x}px, ${y}px) rotate(${x}deg) scale(1.1) ⁠;
+            title.style.transform = `translate(${x}px, ${y}px) scale(1.1)`;
         }, 50);
 
         // Stop animation after 700ms
@@ -37,5 +37,4 @@ document.addEventListener("DOMContentLoaded", function () {
     // Reset effect if user moves mouse out of title
     title.addEventListener("mouseout", () => {
         title.style.transform = "none";
-    });
-});
+    });})

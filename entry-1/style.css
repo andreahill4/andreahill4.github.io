@@ -1,6 +1,6 @@
 body {
     font-family: 'Lora', serif;
-    background-color: #001f3f; /* Navy blue */
+    background-color: #001f3f; 
     color: white;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #001a33; /* Slightly darker navy for header */
+    background-color: #001a33; 
 }
 
 .entry-header {
@@ -56,7 +56,7 @@ header {
 
 .image img {
     width: 100%;
-    max-width: 450px; /* Slightly smaller images */
+    max-width: 450px; 
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
