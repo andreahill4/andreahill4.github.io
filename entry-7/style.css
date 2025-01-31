@@ -1,0 +1,99 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    text-align: center;
+}
+
+.header {
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header span {
+    transition: transform 0.3s ease-in-out;
+}
+
+.header span:hover {
+    transform: translateY(-5px);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.image-container {
+    position: relative;
+    flex: 1;
+    max-width: 600px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.image-container:hover .hover-text {
+    opacity: 1;
+}
+
+.subway-line {
+    width: 100%;
+    height: 10px;
+    background: black;
+    margin-top: 50px;
+    position: relative;
+}
+
+.subway-train {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.train-car {
+    width: 200px;
+    height: 80px;
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px solid black;
+}
+
+.train-car .window {
+    width: 40px;
+    height: 40px;
+    background: yellow;
+    border-radius: 5px;
+}
+
+.subway-train:hover {
+    transform: translateX(-200px);
+}
